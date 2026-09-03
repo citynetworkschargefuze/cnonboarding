@@ -25,7 +25,7 @@
     [data-m="h1"] { font-size: 40px !important; }
     [data-m="h2"] { font-size: 30px !important; }
     [data-m="lede"] { font-size: 16px !important; }
-    [data-m="hero-visual"] { min-height: 240px !important; }
+    [data-m="hero-visual"] { max-width: 280px !important; }
     [data-m="brandbar"] { gap: 10px !important; }
     [data-m="embed-wrap"] { padding: 8px !important; border-radius: 16px !important; }
     [data-m="embed"] { height: 940px !important; }
@@ -38,11 +38,13 @@
   }
   @media (min-width: 721px) and (max-width: 1024px) {
     [data-m="embed"] { height: 780px !important; }
+    [data-m="hero-visual"] { max-width: 340px !important; }
   }
   @media (max-width: 400px) {
     [data-m="h1"] { font-size: 34px !important; }
     [data-m="h2"] { font-size: 26px !important; }
     [data-m="embed"] { height: 980px !important; }
+    [data-m="hero-visual"] { max-width: 240px !important; }
     [data-m="brandlabel"], [data-m="branddiv"] { display: none !important; }
   }
 
@@ -116,8 +118,8 @@
         </div>
       </div>
 
-      <div data-m="hero-visual" style="position: relative; align-self: stretch; min-height: clamp(340px, 46vw, 560px); display: flex;">
-        <div style="position: relative; flex: 1; border-radius: 18px; overflow: hidden; box-shadow: 0 30px 70px rgba(5,16,28,0.16); background: linear-gradient(160deg, #EAF4FE 0%, #D9EBFB 100%); border: 1px solid #CFE7FB;">
+      <div data-m="hero-visual" style="position: relative; width: 100%; max-width: 75%; justify-self: center; align-self: start;">
+        <div style="position: relative; width: 100%; aspect-ratio: 677 / 1016; border-radius: 18px; overflow: hidden; box-shadow: 0 30px 70px rgba(5,16,28,0.16); background: linear-gradient(160deg, #EAF4FE 0%, #D9EBFB 100%); border: 1px solid #CFE7FB;">
           <img src="assets/hero-onboarding.webp" alt="chargeFUZE Portal" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block;">
         </div>
       </div>
